@@ -8,7 +8,7 @@ const Navigation = () => {
 	return (
 		<Navbar bg="light">
 			<Container>
-				<Navbar.Brand>Horaires bus HDF interurbain</Navbar.Brand>
+				<Navbar.Brand>Horaires bus HDF</Navbar.Brand>
 				<Nav className="me-auto">
 					<NavLink to="/Horaire-bus-HDF/" className="nav-link">Accueil</NavLink>
 
