@@ -34,7 +34,10 @@ const ScheduleList = ({ cityMount, cityDescend, tripsDate }) => {
 	}, [cityMount, cityDescend, tripsDate]);
 
 	return (
-		<Row className="text-dark">
+		<Row className="p-3">
+			<hr />
+			<h2 className="mb-3 text-center">Horaires</h2>
+			<hr />
 			{potentialTrips.map((potentialTrip) => (
 				<ScheduleCard tripId={potentialTrip[0]} tripName={potentialTrip[1]} cityMount={cityMount} cityDescend={cityDescend}></ScheduleCard>
 			))}

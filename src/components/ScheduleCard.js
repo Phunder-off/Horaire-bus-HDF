@@ -47,7 +47,7 @@ const ScheduleCard = ({ tripId, tripName, cityMount, cityDescend }) => {
 
 	if (visibilityCard) {
 		return (
-			<Col xs={12} xl={6} className="mb-3">
+			<Col xs={12} xl={6} className="mb-3 text-dark">
 				<Card>
 					<Card.Header>{tripName}</Card.Header>
 					<Card.Body>

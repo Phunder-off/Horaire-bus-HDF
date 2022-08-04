@@ -27,7 +27,8 @@ const Horaires = () => {
 			<Navigation />
 			<main>
 				<Container className="text-light">
-					<Form>
+					<Form className="p-3">
+						<h1 className="text-center">Recherche</h1>
 						<Row>
 							<Col xs={12}>
 								<SelectCity type="mount" changeCity={changeCity}></SelectCity>
@@ -36,7 +37,7 @@ const Horaires = () => {
 
 							<Col xs={12}>
 								<Form.Group className="mb-3" controlId="inputDate">
-									<Form.Label>Date du trajet</Form.Label>
+									<Form.Label>Date du trajet :</Form.Label>
 									<Form.Control type="date" defaultValue={tripsDate} onChange={(e) => setTripsDate(e.target.value)} />
 								</Form.Group>
 							</Col>

@@ -31,7 +31,7 @@ const SelectCity = ({ type, changeCity }) => {
 
 	return (
 		<Form.Group className="mb-3" controlId={`select_${type}`}>
-			<Form.Label>Ville {textType}</Form.Label>
+			<Form.Label>Ville {textType} :</Form.Label>
 			<Row>
 				<Col>
 					<Form.Control
