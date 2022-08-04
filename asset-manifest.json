@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Horaire-bus-HDF/static/css/main.70ea4488.css",
-    "main.js": "/Horaire-bus-HDF/static/js/main.dfb24d64.js",
+    "main.js": "/Horaire-bus-HDF/static/js/main.b763a74f.js",
     "static/media/background.png": "/Horaire-bus-HDF/static/media/background.9e2608d658a5e7169c94.png",
     "index.html": "/Horaire-bus-HDF/index.html",
     "main.70ea4488.css.map": "/Horaire-bus-HDF/static/css/main.70ea4488.css.map",
-    "main.dfb24d64.js.map": "/Horaire-bus-HDF/static/js/main.dfb24d64.js.map"
+    "main.b763a74f.js.map": "/Horaire-bus-HDF/static/js/main.b763a74f.js.map"
   },
   "entrypoints": [
     "static/css/main.70ea4488.css",
-    "static/js/main.dfb24d64.js"
+    "static/js/main.b763a74f.js"
   ]
 }
