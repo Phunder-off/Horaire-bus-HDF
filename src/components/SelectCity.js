@@ -27,7 +27,7 @@ const SelectCity = ({ type, changeCity }) => {
 			document.querySelector(`#cities_select_${type}`).value = citiesDisplay[0].name;
 			changeCity(type, citiesDisplay[0].name);
 		}
-	}, [citiesDisplay, changeCity, type]);
+	}, [citiesDisplay, type]);
 
 	return (
 		<Form.Group className="mb-3" controlId={`select_${type}`}>
