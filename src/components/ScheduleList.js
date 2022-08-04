@@ -7,7 +7,7 @@ import trips from "../data/trips";
 import ScheduleCard from "./ScheduleCard";
 import Row from "react-bootstrap/Row";
 
-const ScheduleList = ({ cityMount, cityDescend, tripsDate }) => {
+const ScheduleList = ({ cityMount, cityDescend, tripsDate, tripsTime }) => {
 	const [potentialTrips, setPotentialTrips] = useState([]);
 
 	useEffect(() => {
@@ -30,8 +30,8 @@ const ScheduleList = ({ cityMount, cityDescend, tripsDate }) => {
 
 		let services = calendar.filter((service) => service[days[new Date(tripsDate).getDay()]]).map((service) => service.service_id);
 
-		setPotentialTrips(trips.filter((trip) => tripsIds.includes(trip.trip_id) && services.includes(trip.service_id)).map((trip) => [trip.trip_id, trip.trip_headsign]));
-	}, [cityMount, cityDescend, tripsDate]);
+		setPotentialTrips(trips.filter((trip) => tripsIds.includes(trip.trip_id) && services.includes(trip.service_id)).map((trip) => [trip.trip_id, trip.trip_headsign, trip.service_id]));
+	}, [cityMount, cityDescend, tripsDate, tripsTime]);
 
 	return (
 		<Row className="p-3">
@@ -39,7 +39,7 @@ const ScheduleList = ({ cityMount, cityDescend, tripsDate }) => {
 			<h2 className="mb-3 text-center">Horaires</h2>
 			<hr />
 			{potentialTrips.map((potentialTrip) => (
-				<ScheduleCard tripId={potentialTrip[0]} tripName={potentialTrip[1]} cityMount={cityMount} cityDescend={cityDescend}></ScheduleCard>
+				<ScheduleCard tripId={potentialTrip[0]} tripName={potentialTrip[1]} serviceId={potentialTrip[2]} cityMount={cityMount} cityDescend={cityDescend} tripsDate={tripsDate} tripsTime={tripsTime}></ScheduleCard>
 			))}
 		</Row>
 	);
