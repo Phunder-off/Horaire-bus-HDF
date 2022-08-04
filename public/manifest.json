@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Horaires bus HDF",
+  "name": "Horaires de bus HDF inter",
   "icons": [
     {
       "src": "favicon.ico",
