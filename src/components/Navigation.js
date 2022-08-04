@@ -10,9 +10,9 @@ const Navigation = () => {
 			<Container>
 				<Navbar.Brand>Horaires bus HDF interurbain</Navbar.Brand>
 				<Nav className="me-auto">
-					<NavLink to="/" className="nav-link">Accueil</NavLink>
+					<NavLink to="/Horaire-bus-HDF/" className="nav-link">Accueil</NavLink>
 
-					<NavLink to="/horaires" className="nav-link">Horaires</NavLink>
+					<NavLink to="/Horaire-bus-HDF/horaires" className="nav-link">Horaires</NavLink>
 				</Nav>
 			</Container>
 		</Navbar>
